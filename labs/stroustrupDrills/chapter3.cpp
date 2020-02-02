@@ -25,12 +25,12 @@ int main()
 	    if (friend_sex == 'm') { pronoun = "he"; }
 	    else { pronoun = "she"; }
 	double age; // Don't need to restrict age to whole numbers
-	cout <<"Dear, " 
-	     <<first_name
-	     <<"\n    How are you? I am fine. I miss you."
-	     <<"\n    I am making a sound somewhere between seal the animal and Seal the amazing singer."
-         <<"\n    Have you seen " << friend_name << " around? I think "
-         <<pronoun << " wears a wig now?"
-         <<'\n';
+	cout << "Dear, " 
+	     << first_name
+	     << "\n    How are you? I am fine. I miss you."
+	     << "\n    I am making a sound somewhere between seal the animal and Seal the amazing singer."
+         << "\n    Have you seen " << friend_name << " around? I think "
+         << pronoun << " wears a wig now?"
+         << '\n';
 }
 
