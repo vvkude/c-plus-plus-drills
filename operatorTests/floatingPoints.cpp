@@ -26,9 +26,10 @@ int main ()
     int b;
     cin >> b;
     int c = a/b * b + a%b; //test the definition of cmath int
-    cout << "\nc is a/b * b + a%b, which is a: " << a/b * b + a%b
-         << "\na == " << a
+    cout << "\nc is a/b * b + a%b, which is a, or " << a/b * b + a%b
+         << "\na/b == " << a << "/" << b << ", which is " << a/b // this is integer division
          << "\nb == " << b
+         << "\na%b == " << a << "%" << b << ", which is " << a%b
          << "\nc == " << c
          << '\n'; // end of line in output
 }
