@@ -7,6 +7,7 @@ int main()
 	     << '\n';
 	double Miles = 0;
 	cin >> Miles;
-	cout << Miles << " miles is " << Miles*1.609 << "kilometers"
+	cout << Miles << " miles is " << Miles*1.609 << " kilometers"
 	     << '\n';
+	return 0;
 }
