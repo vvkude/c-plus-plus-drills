@@ -8,7 +8,9 @@ inline void keep_window_open() { char ch; cin>>ch; }
 
 // This is the drill from the end of chapter 3 in Stroustrup's Programming with C++
 void printErrorMessage(int num) {
-	if (num == 3) 
+	if (num == 3)
+	// flush stream to ensure data is written immediately
+    // could be unecessary as I am not too worried about the buffer at this point
 	{cout << "AGE ERROR: That's impossibly young!" << endl; }
     else if (num == 4)
     {cout << "AGE ERROR: That's improbably old!" << endl; }
