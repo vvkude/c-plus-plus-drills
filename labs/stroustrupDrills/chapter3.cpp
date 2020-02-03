@@ -32,7 +32,7 @@ int main()
 	string pronoun = "???";
 	    if (friend_sex == 'm') { pronoun = "he"; }
 	    else if (friend_sex == 'f') { pronoun = "she"; }
-	    else { pronoun = "they"; }
+	    else { pronoun = "that person"; }
     cout << "Enter your friend's age...\n";
 	double age = 0; // Let proud 12.5 year olds tell us about their exact age
 	cin >> age;
@@ -57,4 +57,3 @@ int main()
     cout << "\n\nYours sincerely,\n\n"
          <<'\n';
 }
-
