@@ -30,7 +30,7 @@ int main() {
     double db = -4.0000000;
     double dc = 3.9999999;
 
-    printf("Roots of the quadratic equation x2 - 4.0000000 x + 3.9999999 = 0 are : \n");
+    printf("Here are the roots of the quadratic equation, x2 - 4.0000000 x + 3.9999999 = 0 ... \n");
     printf("\nFor float values: \n");
     float_roots(fa, fb, fc);
 
