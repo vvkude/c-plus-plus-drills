@@ -27,26 +27,24 @@ int main()
          << '\n';
 }
 
+// I am assuming the point of this exercise is to NOT use min and max
+// Otherwise, we could just scoop up the min and max and what's left
+// should be the middle number
 void sortNum(int& num1, int& num2, int& num3)
 {
 	// Compare the first number to the second number and swap them if they
 	// are not in numerical order
-	if(num1 > num2)
+	if(num1 < num2) 
 	{
 		int swap = num1; // Use a temporary swap variable for moving comparisons
 		num1 = num2;
 		num2 = swap;
 	}
-	if(num2 > num3)
+	if(num3 < num1)
 	{
-		int swap = num2;
-		num2 = num1;
-		num1 = swap;
-	}
-	if(num1 > num3)
-	{
-		int swap = num3;
-		num3 = num1;
+		// if the third number is bigger than the first number, then it is the largest integer
+		int swap = num1;
+		num1 = num3;
 		num3 = swap;
 	}
 }
