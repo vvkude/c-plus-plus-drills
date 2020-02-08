@@ -20,7 +20,6 @@
 */
 
 int main()
-try
 {
 	int value01 = 0;
 	int value02 = 0;
@@ -52,7 +51,7 @@ try
 	    } //--> else
 	} //--> /if
 	// Now duplicate the same logic above for value02
-	elseif (value02<=value01 && value02<=value03) {
+	else if (value02<=value01 && value02<=value03) {
 		smallest = value02;
 		if (value01<=value03) {
 			second_smallest = value01;
