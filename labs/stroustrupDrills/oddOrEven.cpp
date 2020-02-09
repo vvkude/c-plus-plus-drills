@@ -23,12 +23,14 @@ int main()
 	if (value == 0)
 	{
 		cout << "Zero is neither even nor odd. Stop it!\n";
-		return 0;
 	}
-	string parity = "even"; // initialize the result with a known value to make debugging easier
-	// check if modulo yields a result and, if it does, update parity variable
-	if (value%2) parity = "odd";
-	cout << "\nYou enetered an " + parity + " number. How does it feel?\n";
+	else
+	{
+	    string parity = "even"; // initialize the result with a known value to make debugging easier
+	    // check if modulo yields a result and, if it does, update parity variable
+	    if (value%2) parity = "odd";
+	    cout << "\nYou enetered an " + parity + " number. How does it feel?\n";
+    }
 }
 
 /* Design thoughts
