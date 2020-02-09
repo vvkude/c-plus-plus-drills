@@ -25,8 +25,18 @@ int main()
 		cout << "Zero is neither even nor odd. Stop it!\n";
 		return 0;
 	}
-	string parity = "???"; // initialize the result with a known value to make debugging easier
-	// conditionally set the parity variable if there is a remainder of the modulo operator
-	parity = (value%2) ? "odd" : "even";
+	string parity = "even"; // initialize the result with a known value to make debugging easier
+	// check if modulo yields a result and, if it does, update parity variable
+	if (value%2) parity = "odd";
 	cout << "\nYou enetered an " + parity + " number. How does it feel?\n";
 }
+
+/* Design thoughts
+
+Notice the very clever trick from Stroustrup to initialize the parity variable
+with "even" and only update it if necessary. 
+
+Previous strategy used a conditional: 
+string parity = (value%2) ? "odd" : "even";
+
+*/
