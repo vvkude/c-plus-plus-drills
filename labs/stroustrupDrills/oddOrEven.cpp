@@ -20,6 +20,11 @@ int main()
 	int value = 0;
 	cout << "Enter an integer and I'll tell you if it's an even or odd one:\n";
 	cin >> value;
+	if (value == 0)
+	{
+		cout << "Zero is neither even nor odd. Stop it!\n";
+		return 0;
+	}
 	string parity = "???"; // initialize the result with a known value to make debugging easier
 	// conditionally set the parity variable if there is a remainder of the modulo operator
 	parity = (value%2) ? "odd" : "even";
