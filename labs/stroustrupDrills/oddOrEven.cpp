@@ -29,7 +29,8 @@ int main()
 	    string parity = "even"; // initialize the result with a known value to make debugging easier
 	    // check if modulo yields a result and, if it does, update parity variable
 	    if (value%2) parity = "odd";
-	    cout << "\nYou enetered an " + parity + " number. How does it feel?\n";
+	    cout << "When you divide the integer you entered by 2, we get a remainder of " << value%2;
+	    cout << "\nSo, you entered an " + parity + " number. How does it feel?\n";
     }
 }
 
