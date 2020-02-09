@@ -23,22 +23,25 @@ int main()
 {
 	// Prompt for the amount of each sized coin
 	cout << "How many pennies do you have?\n";
-	int userCount = 0;
-	cin >> userCount;
-	// Update the value of cents based on user input
+	int pennies = 0;
+	cin >> pennies;
+	// Program will add to cents every time the user tells us about a coin they have
+	// We could do this in one statement at the end, but it may help to debug to start this way
 	double cents = 0;
-	cents = userCount*.01;
+	cents = pennies*.01;
+	cout << "How many nickels do you have?\n";
+	int nickels = 0;
+	cin >> nickels;
 
     // Read back the denominations of each type of coin
     cout << "You have:\n"
-         << userCount << " pennies\n"
+         << pennies << " pennies\n"
          << '\n';
 
     // Avoid creating a new variable to store dollar amount by 
     // directly manipulating the cents variable
     cout << "The total value of your coins:\n"
-         << cents << " cents" << '\n'
-         << "userCount is " << userCount << '\n'
-         << "$" << cents*100;
+         << "$" << cents << '\n'
+         << "Or, " << cents*100 << " cents";
 
 }
