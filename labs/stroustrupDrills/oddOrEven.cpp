@@ -22,5 +22,6 @@ int main()
 	cin >> value;
 	string parity = "???"; // initialize the result with a known value to make debugging easier
 	// conditionally set the parity variable if there is a remainder of the modulo operator
-	parity = (value%2) ? "even" : "odd";
+	parity = (value%2) ? "odd" : "even";
+	cout << "\nYou enetered an " + parity + " number. How does it feel?\n";
 }
