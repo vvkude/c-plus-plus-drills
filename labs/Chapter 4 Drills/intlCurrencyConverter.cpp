@@ -11,7 +11,7 @@ int main()
 	   inadvertently updated. In the future, these should be consts that are 
 	   updated through some API with up-to-date values according to market data */
 	constexpr double yen_per_dollar = 109.66;
-	constexpr double kroner_per_dollar = 9.30;
+	constexpr double kroner_per_dollar = .11;
 	constexpr double pounds_per_dollar = 0.78;
 
 	double monies = 1;
@@ -21,7 +21,7 @@ int main()
 	cin >> monies >> unit;
 
 	// Now use if clauses to select the currect operation depending on the person's input
-	double dollars;
+	double dollars = 0;
 	if (unit == "y" || "yen") dollars = monies/yen_per_dollar;
 	else if (unit == "k" || "kroner") dollars = monies/kroner_per_dollar;
 	else if (unit == "p" || "pounds") dollars = monies/pounds_per_dollar;
