@@ -17,7 +17,7 @@ int main()
 	double monies = 1;
 	string unit = " "; // a space is not a unit
 	cout << "Please enter the amount of money you have followed by a currency symbol:\n"
-	     << "Available currencies are 'yen(y)', 'kroner(k)', and 'pounds(p)'";
+	     << "Available currencies are 'yen(y)', 'kroner(k)', and 'pounds(p)'\n";
 	cin >> monies >> unit;
 
 	// Now use if clauses to select the currect operation depending on the person's input
