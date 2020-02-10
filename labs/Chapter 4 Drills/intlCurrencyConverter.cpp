@@ -32,7 +32,7 @@ int main()
 	}
 
 	// Read back what the person entered and display their converted value
-    cout << "You had entered that you had " << monies << unit
+    cout << "You had entered that you had " << monies << " " << unit
          <<  ", which is $" << dollars 
          << '\n';
 }
