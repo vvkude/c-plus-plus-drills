@@ -15,16 +15,16 @@ int main()
 	constexpr double pounds_per_dollar = 0.78;
 
 	double monies = 1;
-	char unit = ' '; // a space is not a unit
+	string unit = " "; // a space is not a unit
 	cout << "Please enter the amount of money you have followed by a currency symbol:\n"
 	     << "Available currencies are 'yen(y)', 'kroner(k)', and 'pounds(p)'";
 	cin >> monies >> unit;
 
 	// Now use if clauses to select the currect operation depending on the person's input
 	double dollars;
-	if (unit == 'y') dollars = monies/yen_per_dollar;
-	else if (unit == 'k') dollars = monies/kroner_per_dollar;
-	else if (unit == 'p') dollars = monies/pounds_per_dollar;
+	if (unit == "y" || "yen") dollars = monies/yen_per_dollar;
+	else if (unit == "k" || "kroner") dollars = monies/kroner_per_dollar;
+	else if (unit == "p" || "pounds") dollars = monies/pounds_per_dollar;
 	else { // Crude error handling
 		cout << "Sorry, I do not know about that type of currency.\n"
 	         << "Will you try y, k or p?:\n";
