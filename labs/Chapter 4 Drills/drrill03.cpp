@@ -5,8 +5,23 @@
 
 int main()
 {
-	int increment = 96; // The assignment is to begin looping starting at 97
-	char letter = '`'; // The assignment  is to begin looping starting at a
-	for (int i = 0; i < 26; ++i)
-		cout << ++letter << '\t' << ++increment << '\n';
+	char l_letter = '`';  // The assignment is to begin looping starting at 97
+    int letter_int = l_letter;
+
+    // Print one table for lowercase characters
+    cout << "Here are the lowercase letters:\n";
+	for (int i = 0; i < 26; ++i) {
+		letter_int = l_letter;
+		cout << ++l_letter << '\t' << ++letter_int << '\n';
+	}
+
+	// Print another table for uppercase characters
+	l_letter = '@';
+	letter_int =  l_letter;
+	cout << "\nHere are the uppercase letters:\n";
+	for (int i = 0; i < 26; ++i) {
+		letter_int = l_letter;
+		cout << ++l_letter << '\t' << ++letter_int << '\n';
+	}
+
 }
