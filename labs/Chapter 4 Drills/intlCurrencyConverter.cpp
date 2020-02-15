@@ -22,23 +22,29 @@ int main()
 
 	// Now use if clauses to select the currect operation depending on the person's input
 	double dollars = 0;
-	if (unit == "y" || "yen") { dollars = monies*yen_per_dollar; }
-	else if (unit == "k" || "kroner") { dollars = monies*kroner_per_dollar; }
-	else if (unit == "p" || "pounds") { dollars = monies*pounds_per_dollar; }
+    cout << "\nAt the current market rate, 1 " << unit << " is worth $";
+
+	if (unit == "y" || unit == "yen") {
+		dollars = monies*yen_per_dollar;
+		cout << yen_per_dollar <<'\n';
+	}
+	else if (unit == "k" || unit == "kroner") {
+		dollars = monies*kroner_per_dollar;
+		cout << kroner_per_dollar <<'\n'; 
+	}
+	else if (unit == "p" || unit == "pounds") {
+		dollars = monies*pounds_per_dollar;
+		cout << pounds_per_dollar <<'\n';
+	}
 	else { // Crude error handling
-		cout << "Sorry, I do not know about that type of currency.\n"
+		cout << "\nSorry, I do not know about that type of currency.\n"
 	         << "Will you try y, k or p?:\n";
 	    cin >> monies >> unit;
 	}
 
 	// Read back what the person entered and display their converted value
-    cout << "You had entered that you had " << monies << " " << unit
+    cout << "\nYou entered that you have " << monies << " " << unit
          <<  ", which is $" << dollars 
          << '\n';
 
-    cout << "We used these values for the conversion:\n"
-         << '\n' << yen_per_dollar << '\n'
-         << '\n' << kroner_per_dollar << '\n'
-         << '\n' << pounds_per_dollar << '\n'
-         << '\n' << monies*pounds_per_dollar << '\n';
 }
