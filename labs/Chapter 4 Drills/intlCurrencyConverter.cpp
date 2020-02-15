@@ -24,6 +24,8 @@ int main()
 	double dollars = 0;
     cout << "\nAt the current market rate, 1 " << unit << " is worth $";
 
+    // Recognize that we cannot use `switch' statements on strings
+    // So, we will use nested if statements to make a selection based on user input
 	if (unit == "y" || unit == "yen") {
 		dollars = monies*yen_per_dollar;
 		cout << yen_per_dollar <<'\n';
