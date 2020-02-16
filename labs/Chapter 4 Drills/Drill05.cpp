@@ -1,7 +1,7 @@
 /*  Stroustrup's Programming with C++ Chapter 4 Drill 05
     Vectors and vector operations */
 
-#include "../../headers/headerTemplate.h"
+#include "../../headers/std_lib_facilities.h"
 
 /*  Assignment:
     Write a program that accepts temperature values and 
