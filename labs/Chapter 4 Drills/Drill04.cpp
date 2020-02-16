@@ -27,8 +27,32 @@ int squareRunner (int n)
 	return sq;
 }
 
+/*  Using the fact that (𝑛+1)2=𝑛2+2𝑛+1, adding together serialized odd numbers
+    will get you the value of the square we are looking for for any n
+    (Axiom of Induction) */
+
+int squareAdder(int n)
+{
+	int odd_number = 1;
+	int sq = 0;
+
+	n = abs(n);
+
+	// The sum of odd numbers in series, starting from 1, can be added n times
+	// to create the square for the number n
+	while (n--)
+	{
+		sq = sq + odd_number;
+		odd_number = odd_number +2;
+	}
+
+	return sq;
+}
+
 int main()
 {
-    cout << squareRunner(4) << " " << squareRunner(-4);
+    cout << squareRunner(4) << '\t' << squareRunner(-4)
+         << '\n'
+         << squareAdder(4) << '\t' << squareAdder(-4);
     return 0;
 }
