@@ -21,15 +21,15 @@ int squareRunner (int n)
 	int sq = n;
 
 	// iterate, adding n to the result repeatedly
-	for (int i = 1; i < n; i++)
+	for (int i = 1; i < n; i++) // increment after the expression
 		sq = sq + n;
 
 	return sq;
 }
 
 /*  Using the fact that (𝑛+1)2=𝑛2+2𝑛+1, adding together serialized odd numbers
-    will get you the value of the square we are looking for for any n
-    (Axiom of Induction) */
+    will get you the value of the square we seek for any number, n
+    Axiom of Induction extends this to all cases */
 
 int squareAdder(int n)
 {
@@ -40,7 +40,7 @@ int squareAdder(int n)
 
 	// The sum of odd numbers in series, starting from 1, can be added n times
 	// to create the square for the number n
-	while (n--)
+	while (n--) // decrement n after using it in an expression
 	{
 		sq = sq + odd_number;
 		odd_number = odd_number +2;
