@@ -22,7 +22,7 @@ int squareRunner (int n)
 
 	// iterate, adding n to the result repeatedly
 	for (int i = 1; i < n; i++) // increment after the expression
-		sq = sq + n;
+		sq += n;
 
 	return sq;
 }
@@ -42,8 +42,8 @@ int squareAdder(int n)
 	// to create the square for the number n
 	while (n--) // decrement n after using it in an expression
 	{
-		sq = sq + odd_number;
-		odd_number = odd_number +2;
+		sq += odd_number;
+		odd_number += 2;
 	}
 
 	return sq;
