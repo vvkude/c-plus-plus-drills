@@ -28,7 +28,7 @@ int main()
     cout << "\nHere are your censored words:\n";
 	for (int i = 0; i<words.size(); ++i)
 		// Test if this is a new word, or not (unless it's the very first word)
-		if (words[i]== "banana") {
+		if (words[i]== "banana" || words[i]=="hat") {
 			cout << "BLEEP"
 		         << '\n';
 		     }
